@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería PanaFeli</title>
+	
+	<style>
+		footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+	</style>
+</head>
+<body>
+    <!-- Headings -->
+    <h1>Bienvenido cliente :3</h1>
+    <h2>Sabores dentro de los pasteles y su costo UwU</h2>
+
+    <!-- Parrafos -->
+    <p>A continuación se muestra los sabores que se tienen dentro de los pasteles y el costo de cada uno de los mismos</p>
+
+    <!-- Tablas -->
+    <table>
+        <tr>
+            <th>Sabor</th>
+            <th>Costo</th>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+            <td>$150.00</td>
+        </tr>
+        <tr>
+            <td>Queso con zarzamora</td>
+            <td>$200.00</td>
+        </tr>
+		<tr>
+            <td>Fresa</td>
+            <td>$250.00</td>
+        </tr>
+		<tr>
+            <td>Cajeta</td>
+            <td>$100.00</td>
+        </tr>
+		<tr>
+            <td>Tres leches</td>
+            <td>$200.00</td>
+        </tr>
+		<tr>
+            <td>Coco</td>
+            <td>$120.00</td>
+        </tr>
+		<tr>
+            <td>Oreo</td>
+            <td>$250.00</td>
+        </tr>
+		<tr>
+            <td>Mango</td>
+            <td>$200.00</td>
+        </tr>
+    </table>
+
+	<h2>Decoraciones en los pasteles >w<</h2>
+
+    <!-- Parrafos -->
+    <p>A continuación se muestran las decoraciones que se tienen dentro de los pasteles y el costo de cada uno de los mismos</p>
+
+    <!-- Tablas -->
+    <table>
+        <tr>
+            <th>Decoración</th>
+            <th>Costo</th>
+        </tr>
+        <tr>
+            <td>Decoraciones en 3D</td>
+            <td>$250.00</td>
+        </tr>
+        <tr>
+            <td>Figuras geométricas</td>
+            <td>$50.00</td>
+        </tr>
+		<tr>
+            <td>Flores</td>
+            <td>$100.00</td>
+        </tr>
+		<tr>
+            <td>Escarchados</td>
+            <td>$200.00</td>
+        </tr>
+		<tr>
+            <td>Cobertura de chocolate</td>
+            <td>$150.00</td>
+        </tr>
+		<tr>
+            <td>Cobertura de fresa</td>
+            <td>$120.00</td>
+        </tr>
+		<tr>
+            <td>Fondant</td>
+            <td>$150.00</td>
+        </tr>
+    </table>
+
+	<h2>Estimado cliente, si desea realizar su 
+	pedido le pedimos de la manera más atenta que 
+	rellene el siguiente formulario:</h2>
+	
+	<form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+		<label for="telefono">Teléfono:</label>
+		<input type="number" id="telefono" name="telefono"><br><br>
+		<label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+		
+		<label for="sabor">Sabores del pastel:</label><br><br>
+		<input type="checkbox" id="topping1" name="topping1" value="Chocolate">
+		<label for="topping1">Chocolate</label><br>
+		<input type="checkbox" id="topping2" name="topping2" value="Queso">
+		<label for="topping2">Queso con zarzamora</label><br>
+		<input type="checkbox" id="topping3" name="topping3" value="Fresa">
+		<label for="topping3">Fresa</label><br>
+		<input type="checkbox" id="topping4" name="topping4" value="Cajeta">
+		<label for="topping4">Cajeta</label><br>
+		<input type="checkbox" id="topping5" name="topping5" value="Tres">
+		<label for="topping5">Tres leches</label><br>
+		<input type="checkbox" id="topping6" name="topping6" value="Coco">
+		<label for="topping6">Coco</label><br>
+		<input type="checkbox" id="topping7" name="topping7" value="Oreo">
+		<label for="topping7">Oreo</label><br>
+		<input type="checkbox" id="topping8" name="topping8" value="Mango">
+		<label for="topping8">Mango</label><br><br>
+		
+		<label for="adorno">Adornos del pastel:</label><br><br>
+		<input type="checkbox" id="topping9" name="topping9" value="3D">
+		<label for="topping9">Decoraciones en 3D</label><br>
+		<input type="checkbox" id="topping10" name="topping10" value="GEO">
+		<label for="topping10">Figuras geométricas</label><br>
+		<input type="checkbox" id="topping11" name="topping11" value="Flores">
+		<label for="topping11">Flores</label><br>
+		<input type="checkbox" id="topping12" name="topping12" value="Escarchados">
+		<label for="topping12">Escarchados</label><br>
+		<input type="checkbox" id="topping13" name="topping13" value="CoberCho">
+		<label for="topping13">Cobertura de chocolate</label><br>
+		<input type="checkbox" id="topping14" name="topping14" value="CoberFre">
+		<label for="topping14">Cobertura de Fresa</label><br>
+		<input type="checkbox" id="topping15" name="topping15" value="Fondant">
+		<label for="topping15">Fondant</label><br><br>
+		
+		
+        <input type="submit" value="Encargar">
+        <input type="reset" value="Borrar">
+    </form>
+	
+	<br><br>
+
+	<footer>
+        <p>Dirección: Pino Suárez esquino con Benito Juárez, Acatlima, Huajuapan de León, Oaxaca, México.<br>
+		Teléfono: +52 9514088080<br>
+		Horarios de atención: Lunes a Viernes de 10:00 a 18:00 horas</p>
+    </footer>
+	
+</body>
+</html>
